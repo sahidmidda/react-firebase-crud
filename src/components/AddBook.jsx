@@ -3,7 +3,7 @@ import { Button, Stack, TextField, Typography } from '@mui/material'
 import BookDataService from '../services/book.services';
 import { useEffect } from 'react';
 
-const AddBook = ({ baseChangeChecker, setBaseChangeChecker, currentBookId }) => {
+const AddBook = ({ baseChangeChecker, setBaseChangeChecker, currentBookId, setCurrentBookId }) => {
     const intitalInputState = {
         title: "",
         author: "",
@@ -81,6 +81,7 @@ const AddBook = ({ baseChangeChecker, setBaseChangeChecker, currentBookId }) => 
                 });
             }
             setBaseChangeChecker(!baseChangeChecker);
+            setCurrentBookId('');
             emptyMessage();
             resetInputs();
         } catch (error) {

@@ -13,7 +13,7 @@ function App() {
     <>
       {/* <NavBar /> */}
       <NewNavBar />
-      <AddBook baseChangeChecker={baseChangeChecker} setBaseChangeChecker={setBaseChangeChecker} currentBookId={currentBookId} />
+      <AddBook baseChangeChecker={baseChangeChecker} setBaseChangeChecker={setBaseChangeChecker} currentBookId={currentBookId} setCurrentBookId={setCurrentBookId} />
       <DisplayBooks baseChangeChecker={baseChangeChecker} setCurrentBookId={setCurrentBookId} />
     </>
   )
