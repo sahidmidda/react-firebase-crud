@@ -13,8 +13,11 @@ function App() {
     <>
       {/* <NavBar /> */}
       <NewNavBar />
-      <AddBook baseChangeChecker={baseChangeChecker} setBaseChangeChecker={setBaseChangeChecker} currentBookId={currentBookId} setCurrentBookId={setCurrentBookId} />
-      <DisplayBooks baseChangeChecker={baseChangeChecker} setCurrentBookId={setCurrentBookId} />
+      <div className="flex flex-row justify-around mx-auto w-[80%]">
+
+        <AddBook baseChangeChecker={baseChangeChecker} setBaseChangeChecker={setBaseChangeChecker} currentBookId={currentBookId} setCurrentBookId={setCurrentBookId} />
+        <DisplayBooks baseChangeChecker={baseChangeChecker} setCurrentBookId={setCurrentBookId} />
+      </div>
     </>
   )
 }
